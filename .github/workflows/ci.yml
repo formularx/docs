@@ -46,6 +46,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.5.3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          REPOSITORY_NAME: formularx/formular
           BRANCH: gh-pages
           FOLDER: formular
           CLEAN: true
