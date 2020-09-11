@@ -1,7 +1,6 @@
 import { defineConfig } from 'dumi';
 
 const PUBLIC_PATH = '/formular/';
-const FONT_FAMILY = `'Fira Code',Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace`;
 
 export default defineConfig({
   mode: 'site',
@@ -14,16 +13,6 @@ export default defineConfig({
       rel: 'stylesheet',
       type: 'text/css',
     },
-  ],
-  styles: [
-    `code[class*=language-][class*=language-], pre[class*=language-][class*=language-], code {
-  font-family: ${FONT_FAMILY};
-  font-size: 14px;
-}`,
-    `pre, code, kbd, samp {
-  font-size: 1em;
-  font-family: ${FONT_FAMILY} !important;
-}`,
   ],
   base: PUBLIC_PATH,
   publicPath: PUBLIC_PATH,
