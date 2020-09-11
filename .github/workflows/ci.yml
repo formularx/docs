@@ -7,9 +7,9 @@ on:
     branches: [master]
 
 jobs:
-  docs:
-    name: Document
-    runs-on: macOS-latest
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [12.x]
@@ -43,7 +43,7 @@ jobs:
         run: yarn run site:build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.5.3
+        uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           REPOSITORY_NAME: formularx/formular
