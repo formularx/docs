@@ -7,6 +7,7 @@ export default defineConfig({
   hash: true,
   title: 'Formular',
   logo: PUBLIC_PATH + 'images/formular_logo.svg',
+  favicon: PUBLIC_PATH + 'favicon.ico',
   links: [
     {
       href: PUBLIC_PATH + 'fonts/fira-code/fira_code.css',
@@ -20,6 +21,7 @@ export default defineConfig({
   theme: {
     '@c-primary': '#747474',
   },
+  dynamicImport: {},
   navs: {
     'en-US': [
       // { title: 'Guide', path: '/guide' },
