@@ -1,6 +1,6 @@
 /**
  * title: 快速示例
- * desc: Formular 的优雅之处
+ * desc: \`<Form\>\` 的 effects 属性优雅地声明
  */
 
 import './entry';
@@ -8,12 +8,16 @@ import React from 'react';
 import { Form, Field } from '@formular/antd';
 import { useConstant } from '@formular/react';
 import { createForm } from '@formular/core';
-import { Button, Modal } from 'antd';
+import { Button, Modal, message } from 'antd';
 import { autorun, reaction } from 'mobx';
+import { toStream } from 'mobx-utils';
+import { from } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 import { fetchOptions } from './services';
 
 const App: React.FC = () => {
   const form = useConstant(() => createForm());
+
   return (
     <Form
       form={form}
@@ -51,6 +55,14 @@ const App: React.FC = () => {
             }
           },
         );
+
+        yield from(toStream(() => value('otherAnimalName')))
+          .pipe(debounceTime(500))
+          .subscribe((val) => {
+            if (['dog', 'cat'].includes(val as string)) {
+              message.open({ content: `💗 We all love ${val}s ` } as any);
+            }
+          });
       }}
     >
       <Field
@@ -80,17 +92,12 @@ const App: React.FC = () => {
         component="Input"
         componentProps={{
           style: { width: '40%' },
+          placeholder: 'try to input "cat" or "dog"',
         }}
         rules={{ required: true, message: 'This field is required' }}
         required
       />
-      <Button
-        type="primary"
-        htmlType="submit"
-        onClick={() => {
-          console.log(form);
-        }}
-      >
+      <Button type="primary" htmlType="submit">
         Submit
       </Button>
     </Form>
