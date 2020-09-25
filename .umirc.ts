@@ -40,4 +40,6 @@ export default defineConfig({
       },
     ],
   },
+  ssr: {},
+  exportStatic: {},
 });
