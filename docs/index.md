@@ -5,7 +5,7 @@ hero:
   desc: A Mobx-based form resolution 🐺
   actions:
     - text: Get Started
-      link: /guide/getting-started
+      link: /basics
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 开箱即用
@@ -18,18 +18,3 @@ features:
     desc: 独特的 Markdown 扩展，可嵌入 Demo、可导入外部 Demo 甚至插入自定义 React 组件，使得组件的文档不仅能看，还好用
 footer: Open-source MIT Licensed | Copyright © 2020-present<br />Powered by HeskeyBaozi
 ---
-
-# Get Started
-
-<code src="./typescript.tsx" />
-
-```html
-<head>
-  <style>
-    body {
-      color: red;
-    }
-  </style>
-  <link rel="stylesheet" href="https://a.com/b.css" />
-</head>
-```

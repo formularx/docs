@@ -22,18 +22,18 @@ export default defineConfig({
   },
   navs: {
     'en-US': [
-      { title: 'Guide', path: '/guide' },
-      { title: 'Examples', path: '/examples' },
-      { title: 'API', path: '/api' },
+      // { title: 'Guide', path: '/guide' },
+      // { title: 'Examples', path: '/examples' },
+      // { title: 'API', path: '/api' },
       {
         title: 'GitHub',
         path: 'https://github.com/formularx/formular',
       },
     ],
     'zh-CN': [
-      { title: '教程', path: '/zh-CN/guide' },
-      { title: '示例', path: '/zh-CN/examples' },
-      { title: 'API', path: '/zh-CN/api' },
+      // { title: '教程', path: '/zh-CN/guide' },
+      // { title: '示例', path: '/zh-CN/examples' },
+      // { title: 'API', path: '/zh-CN/api' },
       {
         title: 'GitHub 仓库',
         path: 'https://github.com/formularx/formular',

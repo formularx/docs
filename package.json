@@ -12,7 +12,8 @@
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "postinstall": "dumi generate tmp"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -29,28 +30,29 @@
     ]
   },
   "dependencies": {
-    "@formular/antd": "^1.0.0-alpha.1",
-    "@formular/core": "^1.0.0-alpha.1",
-    "@formular/react": "^1.0.0-alpha.1",
-    "antd": "^4.6.3",
-    "mobx": "^5.15.6",
+    "@formular/antd": "^1.0.0-alpha.6",
+    "@formular/core": "^1.0.0-alpha.3",
+    "@formular/react": "^1.0.0-alpha.4",
+    "antd": "^4.6.5",
+    "mobx": "^5.15.7",
     "mobx-react": "^6.3.0",
     "mobx-state-tree": "^3.17.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "rxjs": "^6.6.3"
   },
   "devDependencies": {
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@umijs/preset-react": "1.x",
-    "@umijs/test": "^3.2.20",
+    "@umijs/test": "^3.2.22",
     "cross-env": "^7.0.2",
     "dumi": "^1.0.34",
-    "father-build": "^1.18.4",
+    "father-build": "^1.18.5",
     "gh-pages": "^3.1.0",
-    "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1",
-    "typescript": "^4.0.2",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3",
     "yorkie": "^2.0.0"
   }
 }
