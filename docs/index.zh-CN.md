@@ -5,7 +5,7 @@ hero:
   desc: 基于 MobX 的通用表单解决方案 🐺
   actions:
     - text: 快速上手
-      link: /zh-CN/basics
+      link: /zh-CN/documents/basics
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 原子组件

@@ -1,8 +1,3 @@
-/**
- * title: 快速示例
- * desc: \`<Form\>\` 的 effects 属性优雅地声明
- */
-
 import './entry';
 import React from 'react';
 import { Form, Field } from '@formular/antd';

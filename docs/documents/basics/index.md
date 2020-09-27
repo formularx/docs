@@ -2,8 +2,8 @@
 title: Introduction to Formular
 group:
   title: Basics
+  order: 1
 toc: menu
-order: 1
 ---
 
 hello world
